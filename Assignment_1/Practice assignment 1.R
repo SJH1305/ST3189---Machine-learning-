@@ -169,7 +169,7 @@ classifier_knn100 <- knn(train = train_scale,
 ### knn_Origin
 png("PA_PLOT_Origin.png", width = 800, height = 600, res = 100)
 plot(test_cl$horsepower, test_cl$weight, 
-     col = test_cl$origin,
+     col = test_cl$origin, #### Each point is coloured based on the cateogry estimated.
      xlab = "horsepower", ylab = "weight",
      main = "Actual Origin Data",
      pch = 19)
